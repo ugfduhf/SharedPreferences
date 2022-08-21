@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
 
 
         binding?.button?.setOnClickListener {
+                                                               // 0 Its private inside App
             myShared = getSharedPreferences("myShared",0)
             var editor:SharedPreferences.Editor = myShared!!.edit()
             var userData = binding?.editText?.text.toString()
